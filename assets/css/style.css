@@ -1,0 +1,597 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/* reset css */
+.text_white{
+    color: white;
+}/* xác thẻ có class này sẽ có chữ trắng */
+.text_black{
+    color: black;
+}/* chữ đen */
+.float_left{
+    float: left;
+}/* xóa thuộc tính chiếm cả dòng của thẻ div */
+.col_2{
+    width: 50%;
+}/* chia đôi thẻ div thành 2 phần  */
+.col_3{
+    width: calc(100%/3);
+    float:left;
+}/* chia thẻ div thành 3 phần  */
+.col_full
+{
+    width: 100%;
+}/* giữ nguyên chiều dài thẻ div */
+.cursor_poiter{
+    cursor: pointer;
+}/* cho pointer có hiệu ứng */
+.clear_float{
+    clear: both;
+}/* sau khi dùng .float_left sẽ xóa float */
+html{
+    background-color:#ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth ;
+}/* tạo màu nền, font chữ và kiểu cuộn cho trang web */
+.text_center{
+    text-align: center;
+}/* căn giữa text */
+#web_box{
+    background: #ebebeb;
+}
+/* web_header và nav */
+#web_header{
+    text-transform: uppercase;
+    font-weight: bold;
+    background: white;
+}
+/* heading */
+#web_header .heading_col{
+    line-height: 46px;
+    padding: 8px;
+}
+.col6 button,
+.col4 button{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 10px;
+    background: white;
+}
+.heading a{
+    color: black;
+    text-decoration: none;
+}
+.heading .col2{
+    position: relative;
+}
+.heading input{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.ti-search{
+    position: absolute;
+    right: 15px;
+    bottom: 21.6px;
+    font-size: 18px;
+    color: coral;
+    font-weight: bold;
+}
+#web_header .user{
+    float: right;
+    padding: 8px 20px;
+}
+.heading_row{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.heading,
+.nav{
+    display: flex;
+    justify-content: center;
+}
+/* end heading */
+/* sub_heading */
+.sub_heading_1{
+    background: orange;
+}
+.sub_heading_1 li{
+    float:left;
+    list-style-type: none;
+    padding: 8px;
+    line-height: 46px;
+}
+.sub_heading_1 ._nav:hover{
+    background: #f29c57;
+    color: white;
+}
+.sub_heading_1 a{
+    color: white;
+    text-decoration: none;
+}
+i{
+    font-size: 15px;
+}
+/* end sub_heading */
+/* end header */
+
+/* #slider */
+#slider{
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right:9.8%;
+}
+.lol_wr,
+.lol{
+    width: 20%;
+}
+.valorant{
+    width: 58%;
+    margin: 0 calc(2%/3);
+    position: relative;
+}
+.img_1,
+.img_3,
+.img_2{
+    width: 100%;
+}
+.text_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 0.5s;
+    backdrop-filter: blur(5px);
+}
+.text_content>*{
+    transform: translateY(50px);
+    transition: transform 0.5s;
+}
+.text_content:hover>*{
+    transform: translateY(0);
+}
+.text_content:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#slider .game_img{
+    margin: 0 16%;
+}
+.vlr_heading{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.img_bottom{
+    margin-top: 5px;
+}
+.vlr_content{
+    margin:  10px;
+}
+/* end slider */
+
+/* content */
+#content{
+    margin-top: 30px;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+#content .game_update{
+    width: 100%;
+    background: white;
+}
+#content .content_heading{
+    width: 20%;
+    background: coral;
+    border-radius: 10px;
+    margin: 15px 15px;
+    font-weight: 700;
+}
+#content p{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+#content li{
+    display: block;
+    line-height: 30px;
+    color: black;
+    font-weight: 600;
+}
+#content p{
+    padding-bottom: 80%;
+    color: white;
+}
+#content li:hover{
+    color: coral;
+}
+#content a{
+    text-decoration: none;
+}
+.content_detail{
+    margin: 20px 0;
+}
+/* deposit */
+#deposit{
+    margin-top: 30px;
+    height: 300px;
+    background-color: black;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+#deposit .deposit_heading{
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: black;
+}
+#deposit h1{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#deposit .block{
+    width: 50%;
+    height: 100%;
+}
+.deposit_form{
+    width:50%;
+    margin-top: 20px;
+}
+.amount_and_password,
+.select_game_and_user_name{
+    padding-left: 70px;
+}
+.amount{
+    padding-left: 82px;
+}
+.amount,
+.select_game{
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+#deposit input,
+#deposit select{
+    border-radius: 10px;
+    border: 2px gray solid;
+}
+#deposit input{
+    padding: 10px;
+}
+#deposit select{
+    padding: 10px;
+}
+.submit_btn{
+    padding-left: 355px;
+}
+#deposit button{
+    border-radius: 10px;
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px white solid;
+}
+#deposit button:hover{
+    background-color: white;
+    color: black;
+}
+/* end deposit */
+
+/* other game */
+#other_games{
+    margin: 30px 23% 0;
+}
+.og_heading h1{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.ti-list{
+    font-size: 25px;
+    font-weight: bold;
+}
+.row1{
+    width: 100%;
+}
+.col_5{
+    width:19.2%;
+    float: left;
+    margin-left:1% ;
+    margin-bottom: 8%;
+}
+.first_game{
+    margin-left: 0;
+}
+/* end other_game */
+
+/* map */
+#map img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+/* end map */
+
+/* contact */
+#contact{
+    margin-top: 30px;
+}
+.location .ti-location-pin{
+    color: black;
+}
+.contact_form{
+    padding: 32px 0;
+    margin: 0 30%;
+}
+.contact_admin{
+    margin-bottom: 16px;
+    font-size: 19px;
+    font-weight: bold 700;
+    line-height: 1.4;
+}
+.in4_user{
+    font-size: 16px;
+}
+.icon_size{
+    width: 30px;
+    display: inline-block;
+}
+.contact_form .col1,
+.contact_form .col2{
+    padding:0 8px;
+}
+.contact_form .row_1{
+    margin-bottom: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row_1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact_form .form_control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact_form .send_btn{
+    float: right;
+    margin: 16px 0;
+    padding: 12px 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact_form .send_btn:hover{
+    color: black;
+    background-color: #ccc;
+}
+.contact_form input{
+    border-radius: 10px;
+    border: 2px black solid;
+}
+/* end contact */
+
+/* footer */
+#footer{
+    background-color: gray;
+    
+}
+#footer{
+    padding: 64px 16px;
+}
+#footer p{
+    margin: 15px 0;
+    font-size: 21px;
+}
+#footer i{
+    font-size: 23px;
+}
+#footer a{
+    color: black;
+    text-decoration: none;
+}
+#footer .footer_icon a:hover{
+    color: rgba(0, 0,0, 0.5)
+}
+#footer {
+    opacity: 0.6;
+}
+#footer .w3{
+    text-decoration-line: underline;
+}
+/* end footer */
+
+/* form login */
+.success,
+.deposit_confirm,
+.signup,
+.login{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.signup_container,
+.login_container{
+    background-color: white;
+    width: 30%;
+    min-height: 200px;
+    position: relative;
+}
+.close{
+    float: right;
+}
+.signup_body,
+.login_body{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.signup_body input,
+.login_body input{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;     
+    margin-top: 10px;             
+}
+.signup_header,
+.login_header {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background:#009688;
+    color: white;
+}
+.close{
+    padding: 8px;
+    color: white;
+}
+.close .ti-close{
+    font-size: 20px;
+}
+.close:hover{
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+.signup_footer,
+.login_footer{
+    text-align: center;
+    padding: 10px;
+}
+.signup_footer button,
+.login_footer button{
+    border: 2px black solid;
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.signup_footer button:hover,
+.login_footer button:hover{
+    background: black;
+    color: white;
+}
+.i{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    display: block;
+    border: 2px black solid;
+}
+.i>i{
+    font-size: 13px;
+}
+.signup_footer button,
+.login_footer button{
+    border-radius: 10px;
+}
+.no_account{
+    margin-top: 10px;
+}
+.no_account a{
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+.open{
+    display: flex;
+}
+/* end form login */
+
+/* deposit_modal */
+.deposit_confirm .container{
+    width: 30%;
+    background-color: white;
+    min-height: 200px;
+}
+.deposit_confirm .heading{
+    padding: 20px;
+    background-color:white;
+    color: black;
+    position: relative;
+}
+.container i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    font-size: 20px;
+}
+.container i:hover{
+    background-color: red;
+    color: white;
+}
+.deposit_confirm header{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container .body{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container input{
+    padding: 10px;
+    border: 2px black solid;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.container .text{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding: 10px;
+    font-size: 20px;
+}
+.container .hidden{
+    margin-top: 18px;
+}
+.float_right{
+    float: right;
+}
+.container .submit{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container .submit:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/* end deposit_modal */
+
+/* Xác nhận nạp thành công */
+.success .form{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.color_red{
+    color: red;
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+    <link rel="shoetcut icon" type="" href="assets/img/map/android-icon-36x36.png">
+    <title>GameCenter</title>
+</head>
+<body>
+    <!-- Khối bao quanh web -->
+    <div id="web_box" class="clear_float"> 
+        <!-- Tạo các class và id cho element để tiện sau này css -->
+        <!-- Khối chứa phần header và navigation -->
+        <div id="web_header">
+            <!-- Khối chứa phần heading (phần trên của header) -->
+            <div class="heading">
+                <div class="heading_row">
+                    <div class="heading_col col1 float_left"><a class="cursor_poiter js-interval" href="">GameHub</a></div>
+                    <div class="heading_col col2 float_left"><input type="text" placeholder="Nhập game cần tìm">
+                        <i class="ti-search cursor_poiter"></i>
+                    </div>
+                    <div class="heading_col col3 float_left">
+                    <a class="cursor_poiter" href="">
+                        Tải app
+                        <i class="ti-desktop"></i>
+                    </a></div>
+                    <div class="heading_col col4 float_left js-login"><button class="cursor_poiter js-login" href="">Đăng nhập</button></div>
+                    <div class="heading_col col6 float_left js-signup"><button class="cursor_poiter js-signup" href="">Đăng ký</button></div>
+                    <div class="heading_col user"><i class="ti-user cursor_poiter"></i></div>
+                    <div class="clear_float"></div>
+                </div>
+                <div class="clear_float"></div>
+            </div>
+            
+            <!-- Khối chứa phần sub_heading (phần dưới của header) -->
+            <div class="sub_heading_1">
+
+                <ul class="nav cursor_poiter">
+                    <li class="_nav nav1 "><a href="" class="text_black">Trang chủ</a></li>
+                    <li class="_nav "><a href="" class="text_black">
+                        Thể loại
+                        <i class="ti-angle-down"></i>
+                    </a></li>
+                    <li class="_nav "><a href="" class="text_black">
+                        Sắp xếp
+                        <i class="ti-angle-down"></i>
+                    </a></li>
+                    <li class="_nav"><a href="#other_games" class="text_black">Chiến thuật</a></li>
+                    <li class="_nav"><a href="#other_games" class="text_black">Khoa học</a></li>
+                    <li class="_nav"><a href="#other_games" class="text_black">Hành động</a></li>
+                    <li class="_nav"><a href="#other_games" class="text_black">Bắn súng</a></li>
+                    <li class="_nav"><a href="#contact" class="text_black">Thảo luận</a></li>
+                    <li class="_nav"><a href="#footer" class="text_black">Fanpage</a></li>
+                </ul>
+                <div class="clear_float"></div>
+            </div>
+        </div>
+        <div class="clear_float"></div>
+
+        <!-- Phần giới thiệu game-->
+        <div id="slider">
+            <div class="game_img">
+                <div class="lol float_left">
+                    <a target="_blank" href="https://lienminh.garena.vn/">
+                        <img class="img_1 cursor_poiter" src="/assets/img/thumbnail_game/lol.jpg" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.gameloop.com/vi/sempage/codmvn/index.html?ADTAG=gg8181&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9vT7qqcPLIdEBfDllX49YDzrrRz5xUKuPGv9J3SoqY_7qTsY8-8J-RoCqzAQAvD_BwE">
+                        <img src="/assets/img/thumbnail_game/pubg.png" alt="" class="img_1 img_bottom cursor_poiter">
+                    </a>
+                </div>
+                
+                <div class="valorant float_left">
+                    <a target="_blank" href="https://playvalorant.com/vi-vn/">
+                        <img class="img_2 cursor_poiter" src="/assets/img/thumbnail_game/valorant.jpg" alt="">
+                        <div class="text_content">
+                            <p class="vlr_heading text_white">Valorant</p>
+                            <p class="vlr_genres text_white">Thể loại: MOBA</p>
+                            <p class="vlr_content text_white">Những câu chuyện của Valorant bắt đầu từ ngày 24/01/2053, thời điểm mà Trái Đất phải đối mặt với một sự kiện mang tên "Tân Ánh Sáng" và sự kiện này lan rộng khắp toàn cầu, gây ra những ảnh hưởng mạnh mẽ đến với suy nghĩ, tính cách, công nghệ và cả cách vận hành của chính phủ. Có thể nói những sự kiện của Valorant xảy ra ở thời kì Hậu Tận Thế trong năm 2053.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="lol_wr float_left">
+                    <a target="_blank" href="https://wildrift.leagueoflegends.com/vi-vn/news/"><img src="/assets/img/thumbnail_game/lolwr.jpg" alt="" class="img_3 cursor_poiter"></a>
+                    <a target="_blank" href="https://store.steampowered.com/app/552520/Far_Cry_5/">
+                        <img src="/assets/img/thumbnail_game/farcry5.png" alt="" class="img_3 img_bottom cursor_poiter">
+                    </a>
+                </div>
+                <div class="clear_float"></div>
+            </div>
+            <div class="clear_float"></div>
+        </div>
+
+        <!-- Phần thông tin game -->
+        <div id="content">
+            <div class="game_update">
+                <div class="content_heading float_left"><p>Thông tin cập nhật</p></div>
+                <div class="content_detail float_left">
+                    <a target="_blank" href="https://playvalorant.com/vi-vn/news/game-updates/the-origins-of-valorant-s-nunca-olvidados/">
+                        <li>Valorant: Nguồn Gốc Của Nunca Olvidados Trong VALORANT</li>
+                    </a>
+                    <a target="_blank" href="https://playvalorant.com/vi-vn/news/game-updates/valorant-episode-3-act-iii-agent-delay/">
+                        <li>Valorant: VALORANT Hồi 3, Phần III Hoãn Ra Mắt Đặc Vụ Mới</li>
+                    </a>
+                    <a target="_blank" href="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/10_2021/DTCL/academySoul.jpg">
+                        <li>LOL: Tổng quan Cơ chế của Thời Đại Công Nghệ: Nâng Cấp Hextech</li>
+                    </a>
+                    <a target="_blank" href="https://lienminh.garena.vn/news/articles/8883">
+                        <li>LOL: Chỉ với 10 RP là bạn đã có cơ hội trên tay trang phục cực khủng.</li>
+                    </a>
+                    <a target="_blank" target="_blank" href="https://wildrift.leagueoflegends.com/vi-vn/news/announcements/wild-rift-horizon-cup-event-primer/">
+                        <li>LOL tốc chiến: Những điều bạn cần biết về giải đấu quốc tế đầu tiên của Tốc Chiến</li>
+                    </a>
+                    <a target="_blank" href="https://lienquan.garena.vn/tin-tuc/chinh-sua-tuong-phien-ban-ky-niem-5-nam">
+                        <li>Liên quân mobile: Chỉnh sửa tướng phiên bản cập nhật kỷ niệm 5 năm phát hành</li>
+                    </a>
+                </div>
+                <div class="clear_float"></div>
+            </div>
+        </div>
+
+        <!-- Form nạp thẻ game -->
+        <div id="deposit">
+            <div class="deposit_form text_white float_left">
+                <div class="deposit_heading text_white"><h1>Nạp thẻ <i class="ti-credit-card"></i></h1></div>
+                <form action="">
+                    <div class="select_game_and_user_name">
+                        <div class="select_game float_left">
+                            <select name="" id="">
+                                <option value="">Liên minh huyền thoại</option>
+                                <option value="">CS:GO</option>
+                                <option value="">Valorant</option>
+                                <option value="">Liên quân</option>
+                            </select>
+                        </div>
+                        <div class="user_name float_left"><input class="" type="text" placeholder="Nhập tài khoản"></div>
+                        <div class="clear_float"></div>
+                    </div>
+                </form>
+                <div class="amount_and_password">
+                    <div class="amount float_left">
+                        <select name="" id="">
+                            <option value=""><p>500.000</p></option>
+                            <option value="">200.000</option>
+                            <option value="">100.000</option>
+                            <option value="">50.000</option>
+                            <option value="">10.000</option>
+                        </select>
+                    </div>
+                    <div class="password float_left"><input class="js-login-remove" type="text" placeholder="Nhập mật khẩu"></div>
+                    <div class="clear_float"></div>
+                </div>
+                <div class="submit_btn">
+                    <button class="js-confirm-deposit">Xác nhận</button>
+                </div>
+            </div>
+            <div class="block float_left"><img src="/assets/img/thumbnail_game/lolwr.jpg" alt="" width="100%" height="100%"></div>
+            <div class="clear_float"></div>
+        </div>
+
+        <!-- Giới thiệu các game khác -->
+        <div id="other_games">
+            <div class="og_heading"><h1><i class="ti-list"></i> Một số game khác</h1></div>
+            <div class="row1">
+                <div class="game_list"><a target="_blank" href="https://wildrift.leagueoflegends.com/vi-vn/news/"><img class="col_5 first_game" src="/assets/img/thumbnail_game/lolwr.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://wildrift.leagueoflegends.com/vi-vn/news/"><img class="col_5" src="/assets/img/thumbnail_game/lolwr.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://wildrift.leagueoflegends.com/vi-vn/news/"><img class="col_5" src="/assets/img/thumbnail_game/lolwr.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://wildrift.leagueoflegends.com/vi-vn/news/"><img class="col_5" src="/assets/img/thumbnail_game/lolwr.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://wildrift.leagueoflegends.com/vi-vn/news/"><img class="col_5" src="/assets/img/thumbnail_game/lolwr.jpg" alt=""></a></div>
+                <div class="clear_float"></div>
+            </div>
+
+            <div class="row1">
+                <div class="game_list"><a target="_blank" href="https://www.gameloop.com/vi/sempage/codmvn/index.html?ADTAG=gg8181&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9vT7qqcPLIdEBfDllX49YDzrrRz5xUKuPGv9J3SoqY_7qTsY8-8J-RoCqzAQAvD_BwE"><img class="col_5 first_game" src="/assets/img/thumbnail_game/pubg.png" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://www.gameloop.com/vi/sempage/codmvn/index.html?ADTAG=gg8181&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9vT7qqcPLIdEBfDllX49YDzrrRz5xUKuPGv9J3SoqY_7qTsY8-8J-RoCqzAQAvD_BwE"><img class="col_5" src="/assets/img/thumbnail_game/pubg.png" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://www.gameloop.com/vi/sempage/codmvn/index.html?ADTAG=gg8181&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9vT7qqcPLIdEBfDllX49YDzrrRz5xUKuPGv9J3SoqY_7qTsY8-8J-RoCqzAQAvD_BwE"><img class="col_5" src="/assets/img/thumbnail_game/pubg.png" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://www.gameloop.com/vi/sempage/codmvn/index.html?ADTAG=gg8181&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9vT7qqcPLIdEBfDllX49YDzrrRz5xUKuPGv9J3SoqY_7qTsY8-8J-RoCqzAQAvD_BwE"><img class="col_5" src="/assets/img/thumbnail_game/pubg.png" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://www.gameloop.com/vi/sempage/codmvn/index.html?ADTAG=gg8181&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9vT7qqcPLIdEBfDllX49YDzrrRz5xUKuPGv9J3SoqY_7qTsY8-8J-RoCqzAQAvD_BwE"><img class="col_5" src="/assets/img/thumbnail_game/pubg.png" alt=""></a></div>
+                <div class="clear_float"></div>
+            </div>
+
+            <div class="row1">
+                <div class="game_list"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.haegin.playtogether&hl=vi&gl=US"><img class="col_5 first_game" src="/assets/img/thumbnail_game/pltgt.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.haegin.playtogether&hl=vi&gl=US"><img class="col_5" src="/assets/img/thumbnail_game/pltgt.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.haegin.playtogether&hl=vi&gl=US"><img class="col_5" src="/assets/img/thumbnail_game/pltgt.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.haegin.playtogether&hl=vi&gl=US"><img class="col_5" src="/assets/img/thumbnail_game/pltgt.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.haegin.playtogether&hl=vi&gl=US"><img class="col_5" src="/assets/img/thumbnail_game/pltgt.jpg" alt=""></a></div>
+                <div class="clear_float"></div>
+            </div>
+
+            <div class="row1">
+                <div class="game_list"><a target="_blank" href="https://www.epicgames.com/store/en-US/p/far-cry-6"><img class="col_5 first_game" src="/assets/img/thumbnail_game/farcry6.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://www.epicgames.com/store/en-US/p/far-cry-6"><img class="col_5" src="/assets/img/thumbnail_game/farcry6.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://www.epicgames.com/store/en-US/p/far-cry-6"><img class="col_5" src="/assets/img/thumbnail_game/farcry6.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://www.epicgames.com/store/en-US/p/far-cry-6"><img class="col_5" src="/assets/img/thumbnail_game/farcry6.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://www.epicgames.com/store/en-US/p/far-cry-6"><img class="col_5" src="/assets/img/thumbnail_game/farcry6.jpg" alt=""></a></div>
+                <div class="clear_float"></div>
+            </div>
+
+            <div class="row1">
+                <div class="game_list"><a target="_blank" href="https://promo.worldofwarships.asia/glows-23950/asia-en/?pub_id=WOWS_Ong_APAC_VI_G_S-NB_ACQ_Competitors__call_of_duty&xid_source=google&xid_medium=cpc&xid_network=g&xid_campaign_id=11853819553&xid_adgroup_id=116059330940&xid_ad_id=486482834280&xid_target_id=kwd-58237186&xid_keyword=call+of+duty&xid_placement=&xid_device_type=c&xid_position=&xid_region=1028805&xid_position_type=-&xid_target=&xid_feeditemid=&xid_matchtype=e&xid_clickid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&url=https://promo.worldofwarships.asia/glows-23950/asia-en/&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&sid=SIDwWRkU_-b4kYgvIU9YdwIDriUrD32i6seFVf0b8M8j9LJUfEGAHvoTAK0EddNh2bwHSsvATnjw1hw4sCL6um5HB__JhuimJEi3zQ3pqc9ju2vI3tsslpaIguUb4SNcDg_xBUpXBZ0H6EO&enctid=cfde7zmb5par&lpsn=WOWS+Marketing+LP+template+2+Global&foris=1&teclient=1635663070078452085&utm_source=nonbrand_search&utm_medium=paid-search&utm_campaign=nl2obq1q&utm_content=wows_ong_apac_vi_g_s-nb_acq_competitors__call_of_duty"><img class="col_5 first_game" src="/assets/img/thumbnail_game/cod.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://promo.worldofwarships.asia/glows-23950/asia-en/?pub_id=WOWS_Ong_APAC_VI_G_S-NB_ACQ_Competitors__call_of_duty&xid_source=google&xid_medium=cpc&xid_network=g&xid_campaign_id=11853819553&xid_adgroup_id=116059330940&xid_ad_id=486482834280&xid_target_id=kwd-58237186&xid_keyword=call+of+duty&xid_placement=&xid_device_type=c&xid_position=&xid_region=1028805&xid_position_type=-&xid_target=&xid_feeditemid=&xid_matchtype=e&xid_clickid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&url=https://promo.worldofwarships.asia/glows-23950/asia-en/&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&sid=SIDwWRkU_-b4kYgvIU9YdwIDriUrD32i6seFVf0b8M8j9LJUfEGAHvoTAK0EddNh2bwHSsvATnjw1hw4sCL6um5HB__JhuimJEi3zQ3pqc9ju2vI3tsslpaIguUb4SNcDg_xBUpXBZ0H6EO&enctid=cfde7zmb5par&lpsn=WOWS+Marketing+LP+template+2+Global&foris=1&teclient=1635663070078452085&utm_source=nonbrand_search&utm_medium=paid-search&utm_campaign=nl2obq1q&utm_content=wows_ong_apac_vi_g_s-nb_acq_competitors__call_of_duty"><img class="col_5" src="/assets/img/thumbnail_game/cod.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://promo.worldofwarships.asia/glows-23950/asia-en/?pub_id=WOWS_Ong_APAC_VI_G_S-NB_ACQ_Competitors__call_of_duty&xid_source=google&xid_medium=cpc&xid_network=g&xid_campaign_id=11853819553&xid_adgroup_id=116059330940&xid_ad_id=486482834280&xid_target_id=kwd-58237186&xid_keyword=call+of+duty&xid_placement=&xid_device_type=c&xid_position=&xid_region=1028805&xid_position_type=-&xid_target=&xid_feeditemid=&xid_matchtype=e&xid_clickid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&url=https://promo.worldofwarships.asia/glows-23950/asia-en/&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&sid=SIDwWRkU_-b4kYgvIU9YdwIDriUrD32i6seFVf0b8M8j9LJUfEGAHvoTAK0EddNh2bwHSsvATnjw1hw4sCL6um5HB__JhuimJEi3zQ3pqc9ju2vI3tsslpaIguUb4SNcDg_xBUpXBZ0H6EO&enctid=cfde7zmb5par&lpsn=WOWS+Marketing+LP+template+2+Global&foris=1&teclient=1635663070078452085&utm_source=nonbrand_search&utm_medium=paid-search&utm_campaign=nl2obq1q&utm_content=wows_ong_apac_vi_g_s-nb_acq_competitors__call_of_duty"><img class="col_5" src="/assets/img/thumbnail_game/cod.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://promo.worldofwarships.asia/glows-23950/asia-en/?pub_id=WOWS_Ong_APAC_VI_G_S-NB_ACQ_Competitors__call_of_duty&xid_source=google&xid_medium=cpc&xid_network=g&xid_campaign_id=11853819553&xid_adgroup_id=116059330940&xid_ad_id=486482834280&xid_target_id=kwd-58237186&xid_keyword=call+of+duty&xid_placement=&xid_device_type=c&xid_position=&xid_region=1028805&xid_position_type=-&xid_target=&xid_feeditemid=&xid_matchtype=e&xid_clickid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&url=https://promo.worldofwarships.asia/glows-23950/asia-en/&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&sid=SIDwWRkU_-b4kYgvIU9YdwIDriUrD32i6seFVf0b8M8j9LJUfEGAHvoTAK0EddNh2bwHSsvATnjw1hw4sCL6um5HB__JhuimJEi3zQ3pqc9ju2vI3tsslpaIguUb4SNcDg_xBUpXBZ0H6EO&enctid=cfde7zmb5par&lpsn=WOWS+Marketing+LP+template+2+Global&foris=1&teclient=1635663070078452085&utm_source=nonbrand_search&utm_medium=paid-search&utm_campaign=nl2obq1q&utm_content=wows_ong_apac_vi_g_s-nb_acq_competitors__call_of_duty"><img class="col_5" src="/assets/img/thumbnail_game/cod.jpg" alt=""></a></div>
+                <div class="game_list"><a target="_blank" href="https://promo.worldofwarships.asia/glows-23950/asia-en/?pub_id=WOWS_Ong_APAC_VI_G_S-NB_ACQ_Competitors__call_of_duty&xid_source=google&xid_medium=cpc&xid_network=g&xid_campaign_id=11853819553&xid_adgroup_id=116059330940&xid_ad_id=486482834280&xid_target_id=kwd-58237186&xid_keyword=call+of+duty&xid_placement=&xid_device_type=c&xid_position=&xid_region=1028805&xid_position_type=-&xid_target=&xid_feeditemid=&xid_matchtype=e&xid_clickid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&url=https://promo.worldofwarships.asia/glows-23950/asia-en/&gclid=CjwKCAjw2vOLBhBPEiwAjEeK9hNZX0Irwbx9_gUOry4R7BeGCPyZz9M6ySBMlQUXHjla4VHkYou4HRoCX8UQAvD_BwE&sid=SIDwWRkU_-b4kYgvIU9YdwIDriUrD32i6seFVf0b8M8j9LJUfEGAHvoTAK0EddNh2bwHSsvATnjw1hw4sCL6um5HB__JhuimJEi3zQ3pqc9ju2vI3tsslpaIguUb4SNcDg_xBUpXBZ0H6EO&enctid=cfde7zmb5par&lpsn=WOWS+Marketing+LP+template+2+Global&foris=1&teclient=1635663070078452085&utm_source=nonbrand_search&utm_medium=paid-search&utm_campaign=nl2obq1q&utm_content=wows_ong_apac_vi_g_s-nb_acq_competitors__call_of_duty"><img class="col_5" src="/assets/img/thumbnail_game/cod.jpg" alt=""></a></div>
+                <div class="clear_float"></div>
+            </div>
+        </div>
+
+        <!-- Tạo map cho trang web -->
+        <div id="map">
+            <img src="/assets/img/map/lolmap.jfif" alt="map">
+        </div>
+
+        <!-- Tạo form liên hệ -->
+        <div id="contact">
+            <h2 class="content_heading text_center">LIÊN HỆ</h2>      
+                <div class="contact_form">
+                    
+                    <div class="contact_admin float_left col_2 ">
+                        <p><i class="ti-location-pin icon_size"></i>Hải Phòng, VN</p>
+                        <p><i class="ti-mobile icon_size"></i>Phone: +84 000000000</p>
+                        <p><i class="ti-email icon_size"></i>Email: mail@mail.com</p>
+                    </div>
+
+                    <div class="in4_user float_left col_2 ">
+                        <form action="">
+                            <div class="row_1">
+                                <div class="col1 float_left col_2">
+                                    <input type="text" placeholder="Tên" name="" id="" required class="form_control">
+                                </div>
+                                <div class="col2 float_left col_2">
+                                    <input type="text" placeholder="Địa chỉ email" name="" id="" required class="form_control">
+                                </div>
+                            </div>
+
+                            <div class="row_2">
+                                <div class="float_left col_full">
+                                    <input type="text" placeholder="Lời nhắn" name="" id="" required class="form_control">
+                                </div>
+                           </div>
+                           <input type="submit" href="#contact" value="GỬI" class="send_btn">
+
+                        </form>
+                    </div>
+                    <div class="clear_float"></div>
+                </div>
+        </div>
+        
+        <!-- Tạo footer -->
+        <div id="footer">
+            <div class="footer_icon text_center">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100049984926179"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-dropbox"></i></a>                
+                <a href="#"><i class="ti-pinterest"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+            </div>
+        </div>
+
+     </div> <!-- Đóng thẻ div của khối chứa trang web -->
+
+    <!-- Tạo form đăng nhập -->
+    <div class="login">
+        <div class="login_container">
+                <div class="close">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="login_header">
+                    <h1>Đăng nhập</h1>
+                </header>
+                <div class="login_body">
+                    <div class="user_name">
+                        <div class="i float_left">
+                            <i class="ti-user"></i>
+                        </div>
+                        <input type="text" placeholder="Tài khoản" required>
+                    </div>
+    
+                    <div class="password">
+                        <div class="i float_left">
+    
+                            <i class="ti-lock"></i>
+                        </div>
+                        <input type="text" placeholder="Mật khẩu" required>
+                    </div>
+                </div>
+                <div class="login_footer">
+                    <div class="confirm"><button class="cursor_poiter js-confirm">Xác nhận</button></div>
+                    <div class="no_account"><p>Chưa có tài khoản? <button class="cursor_poiter js-signup" href="">Đăng ký</button></p></div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Tạo form đăng ký -->
+    <div class="signup">
+        <div class="signup_container">
+            <div class="close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="signup_header">
+                <h1>Đăng ký</h1>
+            </header>
+            <div class="signup_body">
+                <div class="user_name">
+                    <div class="i float_left">
+
+                        <i class="ti-user"></i>
+                    </div>
+                    <input type="text" placeholder="Tài khoản" required>
+                </div>
+
+                <div class="password">
+                    <div class="i float_left">
+
+                        <i class="ti-lock"></i>
+                    </div>
+                    <input type="text" placeholder="Mật khẩu" required>
+                </div>
+            </div>
+            <div class="signup_footer">
+                <div class="confirm"><button class="cursor_poiter js-confirm">Xác nhận</button></div>
+                <div class="no_account"><p>Có tài khoản? <button class="cursor_poiter js-login" href="">Đăng nhập</button></p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tạo form xác nhận nạp thẻ -->
+    <div class="deposit_confirm">
+        <div class="container">
+            <div class="heading"><i class="ti-close cursor_poiter"></i> <header>Xác nhận</header></div>
+            <div class="body">
+                <div class="text float_left">
+                    <div class="seri"><p>Số Seri</p></div>
+                    <div class="hidden"><p>Mã thẻ</p></div>
+                </div>
+                <form class="input_form float_left">
+                    <div class="input_seri"><input type="text" name="" required placeholder="Nhập số seri" id=""></div>
+                    <div class="input_hidden"><input type="text" required placeholder="Nhập mẽ thẻ"></div>
+                    <input class="submit cursor_poiter " type="submit" value="Nạp thẻ">
+                </form>
+                <div class="clear_float"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thông báo nạp thành công -->
+    <div class="success">
+        <div class="form"><h1>Nạp thẻ thành công</h1></div>
+    </div>
+    <script>alert('Cấm trẻ em dưới 18 tuổi')</script>
+    <script> 
+        // login
+        // Lấy ra các element
+        const getLogin = document.querySelectorAll('.js-login')
+        const addLogin=document.querySelector('.login')
+        const getClose=document.querySelectorAll('.close')
+        const getConfirm=document.querySelectorAll('.js-confirm')
+        const getSignup=document.querySelectorAll('.js-signup')
+        const addSignup=document.querySelector('.signup')
+        function showSignupForm(){
+            addSignup.classList.add('open')
+            hideLoginForm()
+        }//Hiện form đăng ký
+        function hideSignupForm(){
+            addSignup.classList.remove('open')
+        }//Ẩn form đăng ký
+        function hideLoginForm(){
+            addLogin.classList.remove('open')
+        }// Ẩn form đăng nhập
+        function showLoginForm(){
+            addLogin.classList.add('open')
+            hideSignupForm()
+        }//Hiện form đăng nhập
+        function confirm(){
+            hideLoginForm()
+            hideSignupForm()
+        }  
+        for(var i of getLogin){
+            i.addEventListener('click',showLoginForm)
+        }
+        for(var i of getSignup){
+            i.addEventListener('click',showSignupForm)
+        }
+        for(var i of getClose)
+        {
+            i.addEventListener('click',confirm)
+        }
+        function removeLoginAndSignupBtns(){
+            getLogin[0].parentNode.removeChild(getLogin[0])
+            getSignup[0].parentNode.removeChild(getSignup[0])
+        }
+        for(var i of getConfirm)
+        {
+            i.addEventListener('click',confirm)
+            i.addEventListener('click',removeLoginAndSignupBtns)
+        }
+        const getLoginRemove=document.querySelectorAll('js-login-remove')
+        const getConfirmDeposit=document.querySelector('.js-confirm-deposit')
+        const addDepositForm=document.querySelector('.deposit_confirm')
+        const closeDepositForm=document.querySelector('.container .ti-close')
+        const napThe = document.querySelector('.container .submit')
+        const depositSuccess=document.querySelector('.success')
+        function hideDepositForm(){
+            addDepositForm.classList.remove('open')
+        }
+        function showDepositForm(){
+            addDepositForm.classList.add('open')
+      
+        }
+        function showConfirm(){
+            depositSuccess.classList.add('open')
+            hideDepositForm()
+            setTimeout(function(){    // Hiện thông báo nạp thành công sau 0.5s
+                depositSuccess.classList.remove('open')
+                location.reload()
+                confirm()
+            },500)
+        }
+        getConfirmDeposit.addEventListener('click',showDepositForm)
+        closeDepositForm.addEventListener('click',hideDepositForm)
+        napThe.addEventListener('click',showConfirm)
+        const sendContact = document.querySelector('.send_btn')
+        function submitContact(){
+            setTimeout(function(){
+                location.reload()
+            },0)
+        }
+        sendContact.addEventListener('click',submitContact)
+    </script>
+</body>
+</html>
